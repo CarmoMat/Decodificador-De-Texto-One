@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <div class="titulo_pagina"> 
+        <img src="img/decodificador.png" alt="decodificador">
+    </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <p>Bem vindo ao Decodificador de texto!</p>
+
+    <div>
+    <p class="aviso"> <img class="img_aviso" src="img/bi_exclamation-circle-fill.png" alt="warning">Apenas letras minúsculas e sem acento.</p>
+    </div>
+    <textarea placeholder="Digite seu texto aqui..." class="texto__descriptografar" name="texto__descriptografar" ></textarea>
+
+    <div class="container__botoes">
+        <button onclick="criptografarMensagem(),resultadoNaTela()" class="container__botao">CRIPTOGRAFAR</button>
+        <button onclick="descriptografarMensagem(),telaInicial()"class="container__botao">DESCRIPTOGRAFAR</button>
+    </div>
+    
+    <div class="retangulo_resultado">
+
+        <div id="aparecer">
+            <p class="resultado_criptografia"></p>
+        </div>
+        
+        <div id="desaparecer">
+        <img class="menina_retangulo" src="img/menina_retangulo.png" alt="menina_com_lupa">
+        <h2>Nenhuma Mensagem <br>Encontrada</br></h2>
+        <h3>Digite um texto que você deseja <br>criptografar ou descriptografar.</br></h3>
+    </div>
+    
+
+
+    <script src="app.js" defer></script>
+</div>
+</body>
+<footer>
+</footer>
+</html>
